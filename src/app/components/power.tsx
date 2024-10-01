@@ -6,17 +6,16 @@ const Empower = () => {
     <div className="w-full h-full bg-white mt-12 flex flex-col overflow-y-hidden overflow-hidden overflow-x-hidden items-center text-center p-6 md:p-10">
       {/* Powerful Features Section */}
       <p
-        className="text-[#0f47a6] font-urbanist text-xs md:text-sm tracking-widest w-full max-w-xs bg-gray-100 rounded-md shadow-md mb-4"
+        className="text-[#0f47a6] font-urbanist text-xs md:text-sm tracking-widest w-full max-w-xs mb-4 relative"
         id="powerful"
-      >
-        POWERFUL FEATURES
-      </p>
+      />
+        <Image src="/works.png" alt="" width={200} height={200}/>
+
+
 
       {/* Title and Description */}
-      <h1 className="text-2xl md:text-3xl font-bold p-2 text-blue-800 mb-4">
-        Empower Your Workforce With <br className="hidden md:block" /> Advanced
-        Tools
-      </h1>
+      <h1 className="mt-2 text-3xl font-semibold text-blue-500 sm:text-4xl lg:text-5xl">Empower Your Workforce with</h1>
+      <h1 className="mt-2 text-3xl font-semibold text-blue-900 sm:text-4xl lg:text-5xl mb-6">Advanced Tools</h1>
       <p className="text-gray-500 text-xs md:text-sm max-w-md mx-auto mb-12">
         Boost Efficiency, Productivity, and Employee Growth with Our Innovative
         HR Tools.
@@ -27,7 +26,7 @@ const Empower = () => {
         {/* Row for Top Three Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 xs:grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 mb-10">
           {/* Card 1 */}
-          <div className="bg-gray-50 shadow-lg rounded-md border border-gray-300 flex flex-col justify-between">
+          <div className="bg-gray-50  border-gray-300 flex flex-col justify-between">
             <Image
               src="/image 1.png"
               alt="Automated Workflows"
@@ -55,7 +54,7 @@ const Empower = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-gray-50 shadow-lg rounded-md border border-gray-300 flex flex-col justify-between">
+          <div className="bg-gray-50 border-gray-300 flex flex-col justify-between">
             <Image
               src="/image 2.png"
               alt="Employee Self Service"
@@ -88,7 +87,7 @@ const Empower = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-gray-50 shadow-lg rounded-md border border-gray-300 flex flex-col justify-between">
+          <div className="bg-gray-50 border-gray-300 flex flex-col justify-between">
             <Image
               src="/image 3.png"
               alt="Real-Time Analytics"
@@ -119,7 +118,7 @@ const Empower = () => {
         {/* Row for Bottom Two Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
           {/* Card 4 */}
-          <div className="bg-gray-50 shadow-lg rounded-md border border-gray-300 flex flex-col justify-between">
+          <div className="bg-gray-50  border-gray-300 flex flex-col justify-between">
             <Image
               src="/image 4.png"
               alt="Centralized Employee Data"
@@ -152,7 +151,7 @@ const Empower = () => {
           </div>
 
           {/* Card 5 */}
-          <div className="bg-gray-50 shadow-lg rounded-md border border-gray-300 flex flex-col justify-between">
+          <div className="bg-gray-50 border-gray-300 flex flex-col justify-between">
             <Image
               src="/image 6.png"
               alt="Advanced Analytics"

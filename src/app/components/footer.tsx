@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -40,35 +39,37 @@ export default function Footer() {
               Morbi fermentum felis in urna suscipit.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center gap-4 mt-8 w-full">
-              <Input
-                type="email"
-                placeholder="Enter your email address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className={`w-full sm:w-auto ${
-                  !isValidEmail ? "border-red-500" : ""
-                }`}
-              />
+            {/* Updated Form Section */}
+            <div className="w-full max-w-2xl mx-auto p-4">
+              <form onSubmit={handleSubmit} className="flex items-center space-x-2 bg-white rounded p-1">
+                <Input
+                  type="email"
+                  placeholder="Enter your email address"
+                  value={email}
+                  onChange={(e) => {
+                  setEmail(e.target.value)
+                  setIsValidEmail(true)
+                  }}
+                  required
+                  className="flex-grow border-none bg-transparent focus:ring-0 text-sm placeholder-white"
+                />
+                <Button 
+                 type="submit" 
+                 className="bg-[#FF9900] hover:bg-[#ff8800] text-white rounded px-6 py-2 text-sm font-medium transition-colors"
+                >
+                 Book a Demo
+                </Button>
+              </form>
               {!isValidEmail && (
-                <p className="text-red-500 text-sm mt-1 w-full text-center sm:text-left">
-                  Please enter a valid email address
-                </p>
+              <p className="text-red-500 text-sm mt-1 text-center">
+                Please enter a valid email address
+              </p>
               )}
-              <Button
-                type="submit"
-                className="bg-[#ff9900] hover:bg-[#ff8800] text-white whitespace-nowrap w-full sm:w-auto"
-                onClick={handleSubmit}
-                id="book"
-              >
-                Book a Demo
-              </Button>
             </div>
           </div>
         </div>
 
-        <div className="h-px bg-[#0066cc] opacity-20 my-8 mx-auto"></div>
-
+        <div className="h-px bg-[#0066cc] opacity-20 my-6 mx-auto"></div>
         <div className="flex flex-col lg:flex-row w-full mt-12 gap-8">
           <div className="flex-1 text-center lg:text-left">
             <h3 className="font-semibold font-urbanist text-2xl mb-4">
@@ -124,7 +125,6 @@ export default function Footer() {
                 <li>
                   <a href="#pricing">Pricing</a>
                 </li>
-                {/* <li><a href="#">About</a></li> */}
               </ul>
             </div>
 

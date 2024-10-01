@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,47 +12,28 @@ const Navbar: React.FC = () => {
   return (
     <nav className="xl:w-[98%] lg:w-[98%] md:w-[98%] sm:w-[98%] xs:w-[98%] mx-auto">
       <div className="xl:w-[98%] lg:w-[98%] md:w-[98%] sm:w-[98%] xs:w-[98%] mx-auto flex items-center justify-between px-2 mt-4">
-        <div className="flex items-center w-[108px] h-[51px] gap-1 pr-6">
-          <span className="  text-[#091E4C] text-2xl pt-[8px] gap-1   pb-[10px] pr-[12px] font-semibold ">
+        {/* Logo */}
+        <div className="flex items-center w-[100px] h-[50px] gap-1 pr-6">
+          <span className="text-[#091E4C] text-2xl font-semibold">
+           <Link href="#Navbar">
             HRXpert
-          </span>
+           </Link> 
+           </span>
         </div>
 
         {/* Navigation Links */}
-        <div className="hidden lg:flex items-center space-x-10 pt-1 gap-2 ">
-          <a
-            href="#powerful"
-            className="text-[#091E4C] w-[127px]  h-[27px] font-normal"
-          >
-            Powerful Features
-          </a>
-          <a
-            href="#how"
-            className="text-[#091E4C] w-[127px]  h-[27px] font-normal"
-          >
-            How It Works
-          </a>
-          <a
-            href="#faq"
-            className="text-[#091E4c] w-[100px] h-[27px] font-normal"
-          >
-            FAQs
-          </a>
-          <a
-            href="#pricing"
-            className="text-[#091E4C] font-normal w-[94px] h-[27px]"
-          >
-            Pricing
-          </a>
-          {/* <a href="/about" className="text-[#091E4C] font-normal w-[55px] h-[27px]">About</a> */}
+        <div className="hidden lg:flex items-center space-x-8">
+          <a href="#powerful" className="text-black font-semibold">Powerful Features</a>
+          <a href="#how" className="text-black font-semibold">How it Works</a>
+          <a href="#faq" className="text-black font-semibold">FAQs</a>
+          <a href="#pricing" className="text-black font-semibold">Pricing</a>
         </div>
 
-        {/* Buttons on Right */}
-        <div className="hidden lg:flex space-x-4 items-center ">
-          {/* <a href="/login" className=" bg-[#E6FCFF] w-[83px] h-[47px] radius-[8px] pt-[10px] pr-[15px] pb[10px] mx-auto pl-[15px] ">Login </a> */}
+        {/* Right-side Buttons */}
+        <div className="hidden lg:flex space-x-4 items-center">
           <a
             href="#book"
-            className="text-white bg-[#0F47A6]  dark:hover:bg-blue-700  w-[150px] h-[47px] radius-[8px] pt-[10px] pr-[15px] pb-[10px] pl-[15px]  rounded-lg gap-[10px]    "
+            className="text-white bg-[#0F47A6] w-[150px] h-[40px] rounded-md flex items-center justify-center"
           >
             Book Free Demo
           </a>
@@ -64,7 +46,7 @@ const Navbar: React.FC = () => {
           aria-controls="mobile-menu-2"
           aria-expanded="true"
         >
-          <span className="sr-only">Open main menu</span>
+          <span className="sr-only">Open menu</span>
           {isOpen ? (
             <svg
               className="w-6 h-6"
@@ -97,31 +79,23 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden ${
-          isOpen ? "block" : "hidden"
-        } w-[95%]mx-auto bg-white`}
+        className={`lg:hidden ${isOpen ? "block" : "hidden"} bg-white w-full`}
       >
         <div className="flex flex-col items-start px-4 py-2 space-y-2">
-          <a href="#powerful" className="block w-full text-gray-700">
-          Powerful Features
-          </a>
-          <a href="#how" className="block w-full text-gray-700">
-          How It Works
-          </a>
-          <a href="#faq" className="block w-full text-gray-700">
-            FAQs
-          </a>
-          <a href="#pricing" className="block w-full text-gray-700">
-          
-          </a>
-          {/* <a href="/about" className="block w-full text-gray-700">
-            About
-          </a> */}
-          {/* <a href="/button1" className=" bg-[#E6FCFF] w-[50] h-[30px] radius-[2px] pt-[5px] pr-[7.5px] pb[5px] pl-[7.5px] ">Login </a>  */}
-
+          <a href="#platform" className="block w-full text-gray-700">Our Platform</a>
+          <a href="#pricing" className="block w-full text-gray-700">Pricing</a>
+          <a href="#solution" className="block w-full text-gray-700">Solution</a>
+          <a href="#resources" className="block w-full text-gray-700">Resources</a>
+          <a href="#about" className="block w-full text-gray-700">About</a>
           <a
-            href="#book"
-            className="text-white bg-[#0F47A6] font-[200]   w-[130px] h-[30px] mt-1 radius-[2px] pt-[7px] pr-[7.5px] pb-[7.5px] pl-[7.5px] px-2 rounded-md gap-[5px]    "
+            href="#login"
+            className="text-[#0F47A6] bg-[#E6FCFF] w-[83px] h-[40px] rounded-md flex items-center justify-center"
+          >
+            Log In
+          </a>
+          <a
+            href="#book-demo"
+            className="text-white bg-[#0F47A6] w-[130px] h-[40px] rounded-md flex items-center justify-center"
           >
             Book Free Demo
           </a>

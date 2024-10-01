@@ -100,12 +100,12 @@ const HRBox = () => {
                 <span className="text-sm text-[#3E77D9]">
                   Collecting Documents
                 </span>
-              </div>
+             </div>
+            </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 const FAQSection = () => {
   const [hoveredAnswer, setHoveredAnswer] = useState<string | null>(null);
@@ -20,7 +21,7 @@ const FAQSection = () => {
     },
     {
       id: "answer-3",
-      question: "Is the software compatible with other tools i use?",
+      question: "Is the software compatible with other tools I use?",
       answer:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris fusce nec tellus sed augue semper porta.",
     },
@@ -39,15 +40,15 @@ const FAQSection = () => {
   ];
 
   return (
-    <div className="bg-[#E6F3FF] h-[821px] py-12 mt-48 ">
+    <div className="bg-[#E6F3FF] h-[650px] py-6">
       <div className="max-w-3xl mx-auto">
         {/* Added FAQs box */}
         <div className="w-[55px] h-[22px] mx-auto mb-8">
           <h2
-            className="font-urbanist text-center text-[16px] text-[#0F47A6] border-b border-[#0F47A6]"
+            className="font-urbanist text-center"
             id="faq"
           >
-            FAQs
+            <Image src="/faq.png" alt="" width={200} height={200} />
           </h2>
         </div>
         <h1 className="text-2xl font-bold text-center mb-8 text-[#0F47A6]">
@@ -62,7 +63,7 @@ const FAQSection = () => {
               onMouseLeave={() => setHoveredAnswer(null)}
             >
               <button className="w-full text-left p-4 flex justify-between items-center focus:outline-none">
-                <span className="font-semibold  font-urbanist  text-[#09134c]">
+                <span className="font-semibold font-urbanist text-[#09134c]">
                   {item.question}
                 </span>
                 <svg

@@ -12,7 +12,7 @@ export default function CompanyImageBanner() {
 
   return (
     <div className="w-full max-w-[1190px] overflow-x-hidden mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="mt-12 sm:mt-24 lg:mt-48 mb-8 sm:mb-12 lg:mb-16">
+      <div className="mt-4 sm:mt-4 lg:mt-8 mb-8 sm:mb-6 lg:mb-16">
         <p className="font-poppins text-[#091e4c] font-normal text-center text-sm sm:text-base lg:text-lg">
           More than 100+ companies trusted us
         </p>
@@ -35,3 +35,4 @@ export default function CompanyImageBanner() {
     </div>
   );
 }
+

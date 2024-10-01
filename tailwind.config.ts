@@ -37,7 +37,7 @@ const config: Config = {
 			marquee:'marquee 30s linear infinite',
 		},
   		textColor: {
-  			'text-gradient': 'linear-gradient(90deg , #0055CC 0%,  #33B2C3 60%)',
+  			'text-gradient': 'linear-gradient(90deg , #0055CC 0%,  #33B2C3 100%)',
   			'text-custom2': 'linear-gradient(90deg, #00A3E0 0%, #003D79 60%)'
   		},
   		colors: {
