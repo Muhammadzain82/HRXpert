@@ -21,7 +21,7 @@ export default function HowItWorks() {
 
       <div className="flex flex-col md:flex-row gap-6 mb-12 mr-10">
       <div className="flex flex-col md:flex-row  p-4">
-       <div className="w-full md:w-1/2 max-w-md mx-auto mb-8 md:mb-0">
+       <div className="bg-blue-50 md:w-1/2 max-w-md mx-auto mb-8 md:mb-0">
             <header className="bg-blue-600 text-white p-4 rounded-t-lg flex justify-between items-center">
                <div className="flex items-center space-x-2">
                   <div className="w-6 h-6 rounded-full flex items-center justify-center">
@@ -29,7 +29,7 @@ export default function HowItWorks() {
                     <div className="w-3 h-3 bg-blue-600 rounded-full"></div>
                 </div>
                 <div className="w-16 h-2 bg-blue-400 rounded"></div>
-                <div className="w-8 h-2 pl-5 bg-blue-400 rounded"></div>
+                <div className="w-8 h-2 bg-blue-400 rounded"></div>
               </div>
               <div className="flex items-center space-x-4">
                   <Image src="/bell.png" alt='' width={27} height={25}/>
