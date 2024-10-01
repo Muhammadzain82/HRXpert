@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardDescription, CardHeader, CardTitle } from "@/lib/components/ui/card";
 import Image from "next/image";
 import React from "react";
 

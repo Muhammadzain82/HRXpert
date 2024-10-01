@@ -1,8 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { Button } from "@/components/ui/button"
-import { Clock, Users, BarChart2, Zap } from "lucide-react"
-import { Bell, ChevronDown, Circle, CheckCircle2 } from "lucide-react"
+import {Circle, CheckCircle2 } from "lucide-react"
 
 export default function HowItWorks() {
   return (
